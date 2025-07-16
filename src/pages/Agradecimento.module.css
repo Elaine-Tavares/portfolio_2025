@@ -1,0 +1,51 @@
+.agradecimentoSection {
+  min-height: 100vh;
+  background-color: #07050b;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.icone {
+  color: #0ff;
+  filter: drop-shadow(0 0 10px #0ff);
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.texto {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 500px;
+}
+
+.botao {
+  background-color: #0ff;
+  color: #07050b;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.botao:hover {
+  background-color: #00cfcf;
+}

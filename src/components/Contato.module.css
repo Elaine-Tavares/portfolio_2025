@@ -1,0 +1,113 @@
+.contatoSection {
+  width: 100%;
+  background: linear-gradient(to right, #07050b, #2a003f, #890b70, #089595);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite 2s,
+             fadeIn 2s ease forwards;
+  padding: 4rem 2rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    /*background-position: determina a posição do fundo (gradiente) na horizontal x% e vertical y%.
+    Começa com o fundo alinhado à esquerda (0%) e centralizado verticalmente (50%).*/
+    background-position: 0% 50%;
+  }
+  /*50%: no meio da animação, o fundo está totalmente à direita (100%), ainda centralizado na vertical*/
+  50% {
+    background-position: 100% 50%;
+  }
+  /*100%: volta ao início — loop infinito suave*/
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
+.subtitulo {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 1.2rem;
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 30px 30px !important;
+  border-radius: 18px;
+  box-shadow: 0 0 20px #0ff;
+  background-color: #0d0d0d;
+}
+
+.form_campo{
+    display: flex;
+    flex-flow: column;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #0ff;
+}
+
+input,
+textarea {
+  background-color: #0d0d0d;
+  border: 1px solid #0ff5;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0ff;
+  box-shadow: 0 0 5px #0ff;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0ff;
+  color: #07050b;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #00cfcf;
+}
+
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .form {
+    padding: 0 1rem;
+  }
+}

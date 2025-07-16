@@ -1,0 +1,22 @@
+.projetosSection {
+  padding: 4rem 2rem;
+  background-color: #07050b;
+  color: #f0f0f0;
+  margin-top: 30px;
+ 
+}
+
+.listaProjetos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Responsivo para telas maiores - ex: grid em desktop */
+@media (min-width: 1024px) {
+  .listaProjetos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

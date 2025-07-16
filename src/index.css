@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: linear-gradient(to right, #07050b, #1a0e19, #2e1929);
+}
+
+.titulo{
+  color: #8e39c0;
+  font-size: 2.5rem;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0ff;
+  position: relative;
+}
+
+.titulo::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #0ff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.subtitulo{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.texto{
+  color: rgba(190,189,190,255);
+  font-size: 18px;
+}
+
+/* Estado inicial (invisível e fora da tela) */
+.hidden {
+       opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 3s ease-in-out forwards; /* 3 segundos de animação suave */
+}
+
+/* Estado visível (suavemente visível e na posição certa) */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Começa bem distante */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(25px); /* Meio da animação */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Posição final */
+  }
+}
+
+
+@media (max-width:768px){
+  .titulo{
+  font-size: 2.2rem;
+}
+
+.subtitulo{
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.texto{
+  color: rgba(190,189,190,255);
+  font-size: 18px;
+}
+}
+

@@ -1,0 +1,151 @@
+.header {
+  background-color: #07050b;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px #0ff;
+   animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0ff;
+}
+
+.logo span {
+  color: #f0f0f0;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+
+.nav a:hover {
+  color: #0ff;
+  text-shadow: 0px 0px 10px #0ff;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menuBtn:focus-visible{
+  outline: 2px solid #0ff;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    width:50%;
+    top: -1200px;
+    height: 100%;
+    right: 0;
+    background-color: #07050b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.4s ease;
+    gap: 100px;
+    padding-inline: 20px;
+    transition: top 0.5s ease;
+    z-index: 99
+  }
+ 
+  .overlay{
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    top: -1200px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75); 
+    cursor: pointer;
+    transition: top 0.5s ease; 
+  }
+
+  .open{
+    display: flex;
+    top: 0px;    
+    box-shadow: 0 0 10px #0ff;
+} 
+
+  .menuBtn {
+    display: block;
+  }
+
+  .nav a {
+    opacity: 0;
+    animation: fadeInLink 0.5s ease forwards;
+  }
+
+  .open a:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  .open a:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .open a:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .open a:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  }
+
+  @keyframes fadeInLink {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+
+  
+
+

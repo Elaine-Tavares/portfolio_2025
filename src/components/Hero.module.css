@@ -1,0 +1,144 @@
+.hero {
+  width: 100%;
+  background: linear-gradient(to right, #07050b, #2a003f, #890b70, #089595);
+  /*A propriedade background-size: 400% 400% faz o gradiente ser maior do que o container, permitindo o deslocamento visível durante a animação.*/
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite 2s,
+             fadeIn 2s ease forwards;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center; 
+  display: flex;
+  flex-flow: column;
+  margin-top: 50px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    /*background-position: determina a posição do fundo (gradiente) na horizontal x% e vertical y%.
+    Começa com o fundo alinhado à esquerda (0%) e centralizado verticalmente (50%).*/
+    background-position: 0% 50%;
+  }
+  /*50%: no meio da animação, o fundo está totalmente à direita (100%), ainda centralizado na vertical*/
+  50% {
+    background-position: 100% 50%;
+  }
+  /*100%: volta ao início — loop infinito suave*/
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero_tecnologias{
+   color: rgba(190,189,190,255);
+}
+
+.sobre_mim_container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.sobre_mim_container_img,
+.sobre_mim_container_texto{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 30px;
+}
+.sobre_mim_container_img img{
+  width: 80%;
+}
+
+.button {
+  /* background-color: #00ffff; */
+  background-color: #ff00cc;
+  color: #000;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00baba;
+}
+
+.container_buttons{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+@media (max-width:868px){
+  .sobre_mim_container{
+  width:100%;
+  margin-top: 20px;
+  flex-flow: column;
+  gap: 20px;
+}
+
+  .sobre_mim_container_img,
+  .sobre_mim_container_texto{
+      width: 100%;
+  }
+
+  .sobre_mim_container_texto h2{
+      margin-bottom: 0px;
+  }
+
+  .container_buttons{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+ 
+}
+
+@media (max-width: 480px){
+   /* Ajustes para dispositivos muito pequenos */
+  .hero {
+    padding: 1rem; /* Menos padding para telas pequenas */
+  }
+
+  .sobre_mim_container {
+    width: 100%;
+    flex-flow: column;
+    gap: 15px;
+  }
+
+  .sobre_mim_container_img img {
+    width: 100%; /* Torna a imagem responsiva */
+  }
+
+  .button {
+    width: 100%; /* Botões em tela cheia */
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,140 @@
+.projeto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 2rem; */
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #07050b, #1a0e2b, #2a003f);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #0ff3;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+[data-aos="fade-up"]{
+  /* border: 2px dashed #0ff; */
+  background-color: #07050b;
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.5s ease; 
+}
+
+[data-aos="fade-up"]:hover{
+  box-shadow: 0 0 15px #0ff;
+  /* transform: translateY(-15px) !important; */
+}
+
+.imagem {
+  width: 400px;
+  max-height: 200px;
+  border-radius: 0.75rem;
+  border: 2px solid #0ff;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info {
+  flex: 1;
+  color: #f0f0f0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  color: #0ff;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ddd;
+  width: 80%;
+  text-align: center;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tecnologias li {
+  background-color: #0ff2;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: #0ff;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #0ff;
+  color: #07050b;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #00cfcf;
+}
+
+
+/* Responsivo */
+@media (max-width: 868px) {
+  .projeto {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imagem {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projeto {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .info h3 {
+    font-size: 1.4rem;
+  }
+
+  .info p {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .tecnologias li {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .botao {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    
+  }
+}

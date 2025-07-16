@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://seudominio.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://seudominio.com/#projetos</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seudominio.com/#linha_do_tempo</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://seudominio.com/#contato</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://seudominio.com/agradecimento</loc>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
