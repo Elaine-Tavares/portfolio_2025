@@ -18,7 +18,7 @@ export default function Contato() {
         <input type="hidden" name="_captcha" value="false" />
 
         {/*Redireciona o usuário após envio (ex: página de agradecimento)*/}
-        <input type="hidden" name="_next" value="http://localhost:5173/agradecimento"/>
+        <input type="hidden" name="_next" value="https://elainetavaresweb.com/agradecimento"/>
 
         {/*Deixa o e-mail recebido mais bonito (estilizado)*/}
         <input type="hidden" name="_template" value="box"/>
