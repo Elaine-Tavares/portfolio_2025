@@ -1,6 +1,57 @@
+import { useState } from 'react';
 import styles from './Contato.module.css';
+import { useNavigate } from 'react-router-dom';
+import api from  '../services/api'
 
 export default function Contato() {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [mensagem, setMensagem] = useState('');
+  const [msgDev, setMsgDev] = useState('')
+  const [msgConsole, setMsgConsole] = useState('')
+  const navigator = useNavigate()
+  
+
+  const handleSubmit = async (e) => {
+      e.preventDefault()
+      setMsgDev("Processando...")
+    try {
+      const response = await api.post('/captar_formulario.php', {
+        nome,
+        email,
+        mensagem,
+      })
+      // sucesso 
+      if (response.data.success) {
+        //exibe a mensagem de sucesso
+        setMsgConsole(response.data.message)
+        console.log(msgConsole) 
+
+        //limpa os campos
+        setEmail('')
+        setNome('')
+        setMensagem('')
+        setTimeout(() => {
+          navigator('/agradecimento')
+        },3000)
+        return;
+      
+        } else {
+          //exibe a mensagem de erro
+         setMsgDev(response.data.message)
+          // apaga a mensagem de erro após 3s
+          setTimeout(() => {
+          setMsgDev("") 
+        }, 3000);
+          return;
+      }
+    } catch (error) {
+      console.error("Erro:", error)
+      setMsgDev("Erro ao conectar com o servidor.")
+      return;
+    } 
+  }
+
   return (
     <section id="contato" className={styles.contatoSection}>
       <header>
@@ -11,21 +62,8 @@ export default function Contato() {
       </p>
       <form
         className={styles.form}
-        action="https://formsubmit.co/elainetavares.developer@gmail.com" 
-        method="POST"
+        onSubmit={handleSubmit}
       >
-        {/*Desativa CAPTCHA. (Pode remover se quiser proteção anti-spam)*/}
-        <input type="hidden" name="_captcha" value="false" />
-
-        {/*Redireciona o usuário após envio (ex: página de agradecimento)*/}
-        <input type="hidden" name="_next" value="https://elainetavaresweb.com/agradecimento"/>
-
-        {/*Deixa o e-mail recebido mais bonito (estilizado)*/}
-        <input type="hidden" name="_template" value="box"/>
-
-        {/*Envia uma resposta automática para quem preencheu o formulário*/}
-        <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem com sucesso. Em breve entraremos em contato. Obrigada! 💙"/>
-
         <div className={styles.form_campo}>
         <label htmlFor="nome">Nome</label>
           <input
@@ -33,6 +71,8 @@ export default function Contato() {
             id="nome"
             name="nome"
             placeholder="Seu nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
             required
           />
         </div>
@@ -44,6 +84,8 @@ export default function Contato() {
             id="email"
             name="email"
             placeholder="seu@email.com"
+            value={email}
+            onChange={(e) =>setEmail(e.target.value)}
             required
           />
        </div>
@@ -55,13 +97,16 @@ export default function Contato() {
           name="mensagem"
           rows="5"
           placeholder="Escreva sua mensagem..."
+          value={mensagem}
+          onChange={(e) =>setMensagem(e.target.value)}
           required
         ></textarea>
        </div>
     
-        <button type="submit" className={styles.button}>
+        <button className={styles.button}>
           Enviar
         </button>
+        {msgDev}
       </form>
     </section>
   );
