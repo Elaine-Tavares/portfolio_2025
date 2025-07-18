@@ -59,6 +59,11 @@
   color: #00baba;
 }
 
+ .textofooter{
+  font-size: 18px;
+  text-align: start;
+ }
+
 /* Responsivo */
 @media (min-width: 768px) {
   .container {
@@ -75,4 +80,16 @@
   .links {
     margin-top: 0;
   }
+}
+
+@media(max-width: 480px){
+  .textofooter{
+    font-size: 14px;
+  }
+
+  .email{
+  font-size: 14px;
+  text-align: start;
+  margin-left: -44px;
+}
 }

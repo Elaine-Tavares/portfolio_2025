@@ -17,8 +17,8 @@ export default function Footer() {
             <Mail size={18} style={{ marginRight: '8px', marginBottom: "-3px" }} />
             elainetavares.developer@gmail.com
           </a>
-          <p className="texto" style={{textAlign: "center"}}>
-            Desenvolvedora Front-end | HTML, CSS, JS, React, PHP, MySQL
+          <p className={styles.textofooter}>
+            Desenvolvedora Front-End <br/> HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub
           </p>
         </div>
 
@@ -40,8 +40,10 @@ export default function Footer() {
             <Linkedin />
           </a>
           <a
-            href="mailto:elainetavares.developer@gmail.com"
-            title="Enviar um e-mail para Elaine Tavares"
+            href="https://wa.link/b9mkmm"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Enviar um whatsapp para Elaine Tavares"
           >
            <MessageCircle />
           </a>

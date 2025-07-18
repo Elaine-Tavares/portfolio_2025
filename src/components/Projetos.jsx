@@ -2,6 +2,7 @@ import Projeto from './Projeto';
 import styles from './Projetos.module.css';
 import elaines_charm from '../assets/projetos_elaines_charm.png'
 import organo_pets from '../assets/projetos_organo_pets.png'
+import hulu from '../assets/projetos_hulu.png'
 
 export default function Projetos() {
     // Exemplo de dados (futuramente posso importar de um JSON ou CMS)
@@ -19,6 +20,13 @@ export default function Projetos() {
       descricao: 'Cria cards bonitinhos com as fotos dos seus pets, com localStorage tem a funcionalidade de excluir card e alterar a cor.',
       tecnologias: ['React', 'CSS Module'],
       link: 'https://organopet.vercel.app/',
+    },
+    {
+      imagem: `${hulu}`,
+      titulo: 'Réplica Hulu',
+      descricao: 'Repliquei o site hulu.com, com foco em reforçar conceitos de estruturação semântica, responsividade e boas práticas em HTML e CSS.',
+      tecnologias: ['HTML', 'CSS'],
+      link: 'https://hulu-teal.vercel.app/',
     }
 ];
   return (

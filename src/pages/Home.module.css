@@ -1,0 +1,35 @@
+.whats{
+  position: fixed;
+  top: 100px;
+  left: 80px;
+  z-index: 800;
+  color: #0ff;
+  width: 70px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.whats:hover{
+    width: 75px;
+}
+
+@media (max-width: 868px){
+  .whats{
+  top: 80px;
+  left: 30px;
+  width: 50px;
+}
+.whats:hover{
+    width: 55px;
+}
+}
+
+@media (max-width: 480px){
+  .whats{
+  left: 10px;
+  width: 40px;
+}
+.whats:hover{
+    width: 45px;
+}
+
+}

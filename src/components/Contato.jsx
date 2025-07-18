@@ -97,6 +97,7 @@ export default function Contato() {
           name="mensagem"
           rows="5"
           placeholder="Escreva sua mensagem..."
+          spellCheck={false}
           value={mensagem}
           onChange={(e) =>setMensagem(e.target.value)}
           required

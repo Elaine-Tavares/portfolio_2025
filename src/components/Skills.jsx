@@ -1,15 +1,17 @@
 import styles from './Skills.module.css';
-import { FaReact, FaJs, FaCss3Alt, FaPhp, FaDatabase, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaJs, FaCss3Alt, FaPhp, FaDatabase, FaGithub, FaHtml5 } from 'react-icons/fa';
 
 export default function Skills() {
    const skills = [
-    { name: 'React', icon: <FaReact color="#61DAFB" size={40} /> },
+    { name: 'HTML', icon: <FaHtml5 color="#E34F26" size={40} /> },
+    { name: 'CSS', icon: <FaCss3Alt color="#2965F1" size={40} /> },
     { name: 'JavaScript', icon: <FaJs color="#F7DF1E" size={40} /> },
-    { name: 'CSS3', icon: <FaCss3Alt color="#2965F1" size={40} /> },
+    { name: 'React', icon: <FaReact color="#61DAFB" size={40} /> },
     { name: 'PHP', icon: <FaPhp color="#8892BE" size={40} /> },
     { name: 'MySQL', icon: <FaDatabase color="#00618A" size={40} /> },
-    { name: 'Git', icon: <FaGitAlt color="#F05032" size={40} /> },
+    { name: 'GitHub', icon: <FaGithub color="#F05032" size={40} /> }
   ];
+  
   return (
      <section className={styles.skillsSection} id="skills">
       <h2 className='titulo'>Minhas Habilidades</h2>
