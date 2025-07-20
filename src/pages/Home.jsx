@@ -4,13 +4,23 @@ import Skills from '../components/Skills'
 import Contato from '../components/Contato'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import styles from './Home.module.css'
 import whats from '../assets/whats.png'
+import Garanto from '../components/Garanto'
+import { Helmet } from 'react-helmet';
+import styles from './Home.module.css'
+
 
 
 export default function Home() {
   return (
           <>
+          <Helmet>
+            <title>ElaineTavaresDev | Sites rápidos e que funcionam bem em qualquer dispositivo</title>
+            <meta
+              name="description"
+              content="Criação de sites rápidos e responsivos. Atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL. Elaine Tavares, desenvolvedora Front-End."
+           />
+          </Helmet>
           <Navbar/>
             <a 
               href="https://wa.link/b9mkmm"
@@ -21,6 +31,7 @@ export default function Home() {
              <img className={styles.whats} src={whats} alt="Icone do whatsapp" />
             </a>
             <Hero/>
+            <Garanto/>
             <Projetos/>
             <Skills/>
             <Contato/>

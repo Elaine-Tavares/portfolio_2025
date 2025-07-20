@@ -1,47 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <!-- Ícone do site -->
-    <link rel="icon" type="image/svg+xml" href="./src/assets/hero_foto.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo_capivara_ligth.png" />
 
      <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
      <!-- Título da página -->
-    <title>Elaine Tavares — Desenvolvedora Front-end | Portfólio</title>
+    <title>ElaineTavaresDev — Sites rápidos e que funcionam bem em qualquer dispositivo</title>
 
      <!-- Meta descrição (aparece nos resultados do Google) -->
     <meta
       name="description"
-      content="Portfólio de Elaine Tavares, desenvolvedora front-end especializada em React, design moderno e experiências web otimizadas."
+      content="Sites rápidos e que funcionam bem em qualquer dispositivo. Atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL. Elaine Tavares, desenvolvedora Front-End."
     />
 
     <!-- Palavras-chave relevantes -->
     <meta
       name="keywords"
-      content="Elaine Tavares, portfólio front-end, desenvolvedora React, projetos web, Vite, JavaScript, CSS, HTML, SEO, React, PHP, MySQL"
+      content="Elaine Tavares, portfólio, desenvolvedora Front-End, projetos web, sites, Vite, JavaScript, CSS, HTML, SEO, React, PHP, MySQL"
     />
 
     <!-- Autor -->
     <meta name="author" content="Elaine Tavares" />
 
     <!-- Open Graph (compartilhamento em redes sociais) -->
-    <meta property="og:title" content="Elaine Tavares — Desenvolvedora Front-end" />
+    <meta property="og:title" content="ElaineTavaresDev — Desenvolvedora Front-End" />
     <meta
       property="og:description"
-      content="Conheça o portfólio de Elaine Tavares com projetos modernos em React, APIs, CSS criativo e mais."
+      content="Sites rápidos e que funcionam bem em qualquer dispositivo. Atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL."
     />
-     <meta property="og:image" content="./src/assets/hero_foto.png" />
-     <meta property="og:url" content="https://seu-dominio.com" />
+     <meta property="og:image" content="./src/assets/hero_foto5.png" />
+     <meta property="og:url" content="https://elainetavaresweb.com/" />
      <meta property="og:type" content="website" />
      <meta property="og:locale" content="pt_BR" />
 
      <!-- SEO técnico -->
-     <link rel="canonical" href="https://seu-dominio.com" />
+     <link rel="canonical" href="https://elainetavaresweb.com/" />
+
+     <link rel="manifest" href="manifest.json">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+<script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registrado com sucesso: ', registration);
+        })
+        .catch((error) => {
+          console.log('Falha ao registrar o Service Worker: ', error);
+        });
+    });
+  }
+</script>

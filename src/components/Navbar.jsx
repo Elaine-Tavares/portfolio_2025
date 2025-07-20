@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import styles from './Navbar.module.css';
 import { Menu, X } from 'lucide-react'; // Ícones (instalado com: npm i lucide-react)
+import { Link } from 'react-router-dom';
+import logo_capivara_light from '../assets/logo_capivara_ligth.png'
+import styles from './Navbar.module.css';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,13 +13,14 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href="#inicio" className={styles.logo} style={{textDecoration: "none"}}>Elaine<span>Tavares</span></a>
+        <a href="#inicio" className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_light} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Dev</a>
         <div className={`${styles.overlay} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu}>
           <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu} aria-label="Navegação principal">
             <a href="#inicio">Inicio</a>
             <a href="#projetos">Projetos</a>
             <a href="#skills">Habilidades</a>
             <a href="#contato">Contato</a>  
+            <Link to='/performance'  rel="noopener noreferrer">Performance</Link>
           </nav>
         </div>
         <button 

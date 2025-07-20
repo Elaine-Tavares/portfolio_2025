@@ -1,5 +1,5 @@
-import styles from './Skills.module.css';
 import { FaReact, FaJs, FaCss3Alt, FaPhp, FaDatabase, FaGithub, FaHtml5 } from 'react-icons/fa';
+import styles from './Skills.module.css';
 
 export default function Skills() {
    const skills = [
@@ -14,7 +14,9 @@ export default function Skills() {
   
   return (
      <section className={styles.skillsSection} id="skills">
-      <h2 className='titulo'>Minhas Habilidades</h2>
+      <header>
+        <h1>Minhas Habilidades</h1>
+      </header>
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.skill} title={skill.name}>

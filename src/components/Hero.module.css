@@ -1,18 +1,17 @@
 .hero {
   width: 100%;
   background: linear-gradient(to right, #07050b, #2a003f, #890b70, #089595);
-  /*A propriedade background-size: 400% 400% faz o gradiente ser maior do que o container, permitindo o deslocamento visível durante a animação.*/
+  /*A propriedade background-size: 300% 300% faz o gradiente ser maior do que o container, permitindo o deslocamento visível durante a animação.*/
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite 2s,
              fadeIn 2s ease forwards;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 50px 2rem 80px 2rem;
   text-align: center; 
   display: flex;
   flex-flow: column;
-  padding-top: 50px !important;
 }
 
 @keyframes gradientAnimation {
@@ -63,14 +62,16 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 30px;
+    gap: 0px;
 }
+
 .sobre_mim_container_img img{
-  width: 80%;
+  width: 70%;
+  box-shadow: 0 0 20px #0ff;
+  border-radius: 18px;
 }
 
 .button {
-  /* background-color: #00ffff; */
   background-color: #ff00cc;
   color: #000;
   padding: 0.8rem 1rem;
@@ -93,21 +94,26 @@
 .container_buttons{
   display: flex;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 
 @media (max-width:868px){
+  .hero{
+    padding: 50px 2rem 0px 2rem;
+  }
+
   .sobre_mim_container{
-  width:100%;
-  margin-top: 20px;
-  flex-flow: column;
-  gap: 20px;
+    width:100%;
+    margin-top: 20px;
+    flex-flow: column;
+    gap: 20px;
 }
 
   .sobre_mim_container_img,
   .sobre_mim_container_texto{
       width: 100%;
+      gap: 30px;
   }
 
   .sobre_mim_container_texto h2{
@@ -122,23 +128,7 @@
 }
 
 @media (max-width: 480px){
-   /* Ajustes para dispositivos muito pequenos */
-  .hero {
-    padding: 1rem; /* Menos padding para telas pequenas */
-  }
-
   .sobre_mim_container {
-    width: 100%;
-    flex-flow: column;
     gap: 15px;
-  }
-
-  .sobre_mim_container_img img {
-    width: 100%; /* Torna a imagem responsiva */
-  }
-
-  .button {
-    width: 100%; /* Botões em tela cheia */
-    padding: 1rem;
-  }
+  } 
 }

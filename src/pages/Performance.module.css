@@ -1,0 +1,161 @@
+.nav{
+  background-color: #07050b;
+  padding: 1rem 4.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px #0ff;
+  animation: fadeIn 2s ease forwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0ff;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #f0f0f0;
+}
+
+.logo img{
+  width: 4rem;
+  border-radius: 50%;
+   box-shadow: 0 0 20px #0ff;
+   margin-right: 10px;
+}
+
+.home {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+
+.home:hover {
+  color: #0ff;
+  text-shadow: 0px 0px 10px #0ff;
+}
+
+
+.performance {
+  padding: 3rem 4rem;
+  width: 100%;
+  margin: 0 auto;
+  color: #e0e0e0;
+  background-color: #111;  
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ccc;
+}
+
+.secao {
+  margin-bottom: 2rem;
+}
+
+.secao h2 {
+  color: #00ffc8;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.secao ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.secao li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.final {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.icone {
+  color: #00e0ff;
+  margin-right: 0.5rem;
+}
+
+.topo {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #00e0ff;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.topo:hover {
+  background-color: #00b6cc;
+}
+
+
+@media (max-width: 868px){
+  .logo {
+    font-size: 1.3rem;
+}
+
+.logo span {
+  color: #f0f0f0;
+}
+
+.logo img{
+  width: 3rem;
+}
+}
+
+@media(max-width: 480px){
+  .nav{
+  padding: 1rem 2rem;
+}
+
+.performance {
+  padding: 3rem 2rem;
+}
+}

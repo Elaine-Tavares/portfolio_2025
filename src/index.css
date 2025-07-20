@@ -15,11 +15,7 @@ body{
   background: linear-gradient(to right, #07050b, #1a0e19, #2e1929);
 }
 
-.titulo{
-  color: #8e39c0;
-  font-size: 2.5rem;
-}
-
+h1, 
 .titulo {
   font-size: 2.5rem;
   text-align: center;
@@ -28,6 +24,7 @@ body{
   position: relative;
 }
 
+h1::after,
 .titulo::after {
   content: '';
   width: 60px;
@@ -79,19 +76,14 @@ body{
 }
 
 
-@media (max-width:768px){
+@media (max-width:868px){
+  h1,
   .titulo{
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .subtitulo{
-  color: #fff;
   font-size: 1.8rem;
-}
-
-.texto{
-  color: rgba(190,189,190,255);
-  font-size: 18px;
 }
 }
 

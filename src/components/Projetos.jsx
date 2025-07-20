@@ -1,8 +1,8 @@
 import Projeto from './Projeto';
-import styles from './Projetos.module.css';
 import elaines_charm from '../assets/projetos_elaines_charm.png'
 import organo_pets from '../assets/projetos_organo_pets.png'
 import hulu from '../assets/projetos_hulu.png'
+import styles from './Projetos.module.css';
 
 export default function Projetos() {
     // Exemplo de dados (futuramente posso importar de um JSON ou CMS)
@@ -32,7 +32,7 @@ export default function Projetos() {
   return (
     <section id="projetos" className={styles.projetosSection}>
       <header>
-        <h2 className='titulo'>Projetos</h2>
+        <h1>Projetos</h1>
       </header> 
       <div className={styles.listaProjetos}>
         {listaProjetos.map((projeto, index) => (

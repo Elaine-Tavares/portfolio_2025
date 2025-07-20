@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 2rem; */
   margin: 2rem 0;
   padding: 1.5rem;
   background: linear-gradient(to right, #07050b, #1a0e2b, #2a003f);
@@ -13,7 +12,6 @@
 }
 
 [data-aos="fade-up"]{
-  /* border: 2px dashed #0ff; */
   background-color: #07050b;
   border-radius: 12px;
   padding: 30px;
@@ -22,7 +20,6 @@
 
 [data-aos="fade-up"]:hover{
   box-shadow: 0 0 15px #0ff;
-  /* transform: translateY(-15px) !important; */
 }
 
 .imagem {

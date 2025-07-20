@@ -1,54 +1,53 @@
-import styles from './Footer.module.css';
 import { Github, Linkedin, Mail, MessageCircle  } from 'lucide-react';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   const anoAtual = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.info}>
+    <footer className={styles.footer}>      
           <p className={styles.nome}>Desenvolvido com carinho por Elaine Tavares ©{anoAtual}</p>
-          <a
-            href="mailto:elainetavares.developer@gmail.com" target='blank'  rel="noopener noreferrer"
-            title="Enviar um e-mail para Elaine Tavares"
-            className={styles.email}
+          <div className={styles.info}>
+            <div className={styles.info_texto}>
+                <a
+                href="mailto:elainetavares.developer@gmail.com" target='blank'  rel="noopener noreferrer"
+                title="Enviar um e-mail para Elaine Tavares"
+                className={styles.email}
+                >
+                <Mail/>
+                elainetavares.developer@gmail.com
+              </a>
+              <p className={styles.textofooter}>
+                Desenvolvedora Front-End <br/> HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub
+              </p>
+            </div>
+            <nav className={styles.links} aria-label="Links para redes sociais">
+            <a
+              href="https://github.com/Elaine-Tavares"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Acessar o GitHub de Elaine Tavares"
             >
-            <Mail size={18} style={{ marginRight: '8px', marginBottom: "-3px" }} />
-            elainetavares.developer@gmail.com
-          </a>
-          <p className={styles.textofooter}>
-            Desenvolvedora Front-End <br/> HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub
-          </p>
-        </div>
-
-        <nav className={styles.links} aria-label="Links para redes sociais">
-          <a
-            href="https://github.com/Elaine-Tavares"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Acessar o GitHub de Elaine Tavares"
-          >
-            <Github />
-          </a>
-          <a
-            href="www.linkedin.com/in/elaine-tavares-b5797b1b0"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Acessar o LinkedIn de Elaine Tavares"
-          >
-            <Linkedin />
-          </a>
-          <a
-            href="https://wa.link/b9mkmm"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Enviar um whatsapp para Elaine Tavares"
-          >
-           <MessageCircle />
-          </a>
-        </nav>
-      </div>
+              <Github />
+            </a>
+            <a
+              href="https://linkedin.com/in/elaine-tavares-b5797b1b0"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Acessar o LinkedIn de Elaine Tavares"
+            >
+              <Linkedin />
+            </a>
+            <a
+              href="https://wa.link/b9mkmm"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Enviar um whatsapp para Elaine Tavares"
+            >
+            <MessageCircle />
+            </a>
+          </nav>
+        </div>     
     </footer>
   );
 }

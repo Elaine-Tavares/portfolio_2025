@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import styles from './Contato.module.css';
 import { useNavigate } from 'react-router-dom';
 import api from  '../services/api'
+import styles from './Contato.module.css';
 
 export default function Contato() {
   const [nome, setNome] = useState('');
@@ -55,7 +55,7 @@ export default function Contato() {
   return (
     <section id="contato" className={styles.contatoSection}>
       <header>
-        <h2 className='titulo'>Entre em Contato</h2>
+        <h1>Entre em Contato</h1>
       </header>
       <p className={styles.subtitulo}>
         Ficarei feliz em conversar com você sobre oportunidades, parcerias ou projetos!

@@ -9,13 +9,11 @@ export default function Projeto({imagem, titulo, descricao, link, tecnologias}) 
   }, [])
 
   return (
-    <div className={styles.projeto} data-aos="fade-up"
-      >
+    <div className={styles.projeto} data-aos="fade-up">
       <img 
         className={styles.imagem} 
         src={imagem} 
         alt={`Imagem ilustrativa do projeto ${titulo}`} 
-        title={`Veja o projeto ${titulo}`}  // Para contexto adicional no SEO
         loading="lazy" 
       /> 
       <div className={styles.info}>
@@ -31,7 +29,7 @@ export default function Projeto({imagem, titulo, descricao, link, tecnologias}) 
           target="_blank" 
           rel="noopener noreferrer" 
           className={styles.botao} 
-          title={`Abrir o projeto ${titulo}`} 
+          title={`Abrir o projeto ${titulo}`} // Para contexto adicional no SEO
         >
           Ver Projeto
         </a>
