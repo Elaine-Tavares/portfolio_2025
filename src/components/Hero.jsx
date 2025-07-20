@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import hero_foto5 from '../assets/hero_foto5.png'
 import styles from './Hero.module.css'
 
@@ -20,11 +21,11 @@ export default function Hero() {
               </p>
             <div className={styles.container_buttons}>
               <a href="#projetos" className={styles.button}>Projetos</a> 
-              <a href="https://drive.google.com/file/d/1yUHSRGJI59XMGTfTS_8YM95mhvC_Sjjo/view?usp=sharing" 
+              <Link to='/curriculo'
                  className={styles.button} 
                  rel="noopener noreferrer" 
                  target='blank'>Currículo
-              </a>
+              </Link>
             </div>
           </div>
         </div>  

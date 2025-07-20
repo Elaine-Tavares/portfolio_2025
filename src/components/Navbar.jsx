@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Ícones (instalado com: npm i lucide-react)
 import { Link } from 'react-router-dom';
-import logo_capivara_light from '../assets/logo_capivara_ligth.png'
+import logo_capivara_light from '../assets/logo_capivara_ligth.webp'
 import styles from './Navbar.module.css';
 
 export default function Navbar() {

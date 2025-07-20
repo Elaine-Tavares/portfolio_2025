@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Agradecimento from "./pages/Agradecimento"
 import Performance from "./pages/Performance"
 import ScrollToTop from "./components/ScrollToTop"
+import Curriculo from "./pages/Curriculo"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/performance" element={<Performance/>}/>
         <Route path="/agradecimento" element={<Agradecimento/>}/>
+        <Route path="/curriculo" element={<Curriculo/>}/>
       </Routes>   
     </BrowserRouter>   
   )

@@ -12,17 +12,6 @@
   width: 100%;
 }
 
-@keyframes fadeIn {
-  /*No início 0%: o elemento está totalmente transparente*/
-  0% {
-    opacity: 0;
-  }
-  /*No fim 100%: o elemento está totalmente visível*/
-  100% {
-    opacity: 1;
-  }
-}
-
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -54,14 +43,18 @@
   text-shadow: 0px 0px 10px #0ff;
 }
 
+.curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease forwards;
+    padding: 3rem 4rem;
+    width: 100%;
+    background-color: #111;  
+}
 
-.performance {
-  padding: 3rem 4rem;
-  width: 100%;
-  margin: 0 auto;
-  color: #e0e0e0;
-  background-color: #111;  
-  animation: fadeIn 2s ease forwards;
+.curriculo_img{
+    width: 70%;
 }
 
 @keyframes fadeIn {
@@ -73,46 +66,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.intro {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #ccc;
-}
-
-.secao {
-  margin-bottom: 2rem;
-}
-
-.secao h2 {
-  color: #00ffc8;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-}
-
-.secao ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-.secao li {
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
-}
-
-.final {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #aaa;
-}
-
-.icone {
-  color: #00e0ff;
-  margin-right: 0.5rem;
 }
 
 .topo {
@@ -135,23 +88,26 @@
   background-color: #00b6cc;
 }
 
-
 @media (max-width: 868px){
   .logo {
     font-size: 1.3rem;
 }
 
-  .logo span {
-    color: #f0f0f0;
-  }
+.logo span {
+  color: #f0f0f0;
+}
 
-  .logo img{
-    width: 3rem;
-  }
+.logo img{
+  width: 3rem;
+}
 
-  .performance {
-    padding: 3rem 4rem;
-  }
+.curriculo {
+  padding: 3rem 4rem;
+}
+
+.curriculo_img{
+    width: 100%;
+}
 }
 
 @media(max-width: 480px){
@@ -159,7 +115,8 @@
   padding: 1rem 2rem;
 }
 
-  .performance {
-    padding: 3rem 2rem;
-  }
+.curriculo {
+  padding: 3rem 2rem;
+}
+
 }

@@ -1,7 +1,7 @@
 import Projeto from './Projeto';
-import elaines_charm from '../assets/projetos_elaines_charm.png'
-import organo_pets from '../assets/projetos_organo_pets.png'
-import hulu from '../assets/projetos_hulu.png'
+import elaines_charm from '../assets/projetos_elaines_charm.webp'
+import organo_pets from '../assets/projetos_organo_pets.webp'
+import hulu from '../assets/projetos_hulu.webp'
 import styles from './Projetos.module.css';
 
 export default function Projetos() {

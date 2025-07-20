@@ -6,7 +6,7 @@ import { FaArrowUp, FaCheckCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
-import logo_capivara_ligth from '../assets/logo_capivara_ligth.png'
+import logo_capivara_ligth from '../assets/logo_capivara_ligth.webp'
 import styles from './Performance.module.css';
 
 export default function Performance() {
@@ -14,7 +14,7 @@ export default function Performance() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowTopButton(window.scrollY > 400);
+      setShowTopButton(window.scrollY > 500);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -25,7 +25,7 @@ export default function Performance() {
   };
 
   return (
-    <section >
+    <section>
       <Helmet>
         <title>Performance Web | ElaineTavaresDev</title>
         <meta
