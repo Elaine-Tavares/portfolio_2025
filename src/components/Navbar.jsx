@@ -13,14 +13,18 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href="#inicio" className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_light} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Dev</a>
+        <a href="#inicio" className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_light} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Web</a>
         <div className={`${styles.overlay} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu}>
           <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu} aria-label="Navegação principal">
             <a href="#inicio">Inicio</a>
             <a href="#projetos">Projetos</a>
             <a href="#skills">Habilidades</a>
             <a href="#contato">Contato</a>  
-            <Link to='/performance'  rel="noopener noreferrer">Performance</Link>
+            <Link 
+              to='/performance' 
+              rel="noopener noreferrer">
+              Performance
+            </Link>
           </nav>
         </div>
         <button 

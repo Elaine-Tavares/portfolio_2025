@@ -10,12 +10,12 @@ export default function Footer() {
           <div className={styles.info}>
             <div className={styles.info_texto}>
                 <a
-                href="mailto:elainetavares.developer@gmail.com" target='blank'  rel="noopener noreferrer"
+                href="mailto:contato@elainetavaresweb.com" target='blank'  rel="noopener noreferrer"
                 title="Enviar um e-mail para Elaine Tavares"
                 className={styles.email}
                 >
                 <Mail/>
-                elainetavares.developer@gmail.com
+                contato@elainetavaresweb.com
               </a>
               <p className={styles.textofooter}>
                 Desenvolvedora Front-End <br/> HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub

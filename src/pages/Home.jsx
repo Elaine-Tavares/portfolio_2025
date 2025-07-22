@@ -15,7 +15,7 @@ export default function Home() {
   return (
           <>
           <Helmet>
-            <title>ElaineTavaresDev | Sites rápidos e que funcionam bem em qualquer dispositivo</title>
+            <title>ElaineTavaresWeb | Sites rápidos e que funcionam bem em qualquer dispositivo</title>
             <meta
               name="description"
               content="Criação de sites rápidos e responsivos. Atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL. Elaine Tavares, desenvolvedora Front-End."

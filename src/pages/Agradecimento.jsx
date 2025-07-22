@@ -7,7 +7,7 @@ export default function Agradecimento() {
   return (
     <section className={styles.agradecimentoSection}>
       <Helmet>
-        <title>Obrigada pela visita | ElaineTavaresDev</title>
+        <title>Obrigada pela visita | ElaineTavaresWeb</title>
         <meta
           name="description"
           content="Obrigada pela visita! Em breve, responderei com todo carinho. Elaine Tavares desenvolvedora Front-End."

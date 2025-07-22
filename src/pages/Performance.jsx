@@ -27,14 +27,14 @@ export default function Performance() {
   return (
     <section>
       <Helmet>
-        <title>Performance Web | ElaineTavaresDev</title>
+        <title>Performance Web | ElaineTavaresWeb</title>
         <meta
           name="description"
           content="Saiba como otimizo a performance dos meus sites com práticas como lazy loading, compressão de imagens, minificação e análise no PageSpeed Insights." 
         />
       </Helmet>
       <nav className={styles.nav} aria-label="Navegação principal">
-        <Link to='/' className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_ligth} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Dev</Link>
+        <Link to='/' className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_ligth} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Web</Link>
         <Link to='/' className={styles.home}>Home</Link>
       </nav>
         <main className={styles.performance}>

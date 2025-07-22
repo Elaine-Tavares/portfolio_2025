@@ -7,8 +7,18 @@ export default defineConfig({
   plugins: [
     react(), // ou vue() se for Vue
     VitePWA({
-      injectManifest: false,
       registerType: 'autoUpdate',
+      injectRegister: 'script',   // importante: isso injeta o registerSW.js como <script>
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,svg,webmanifest}'],
+      },
+      injectManifest: false,
+        injectScript: {
+        injectTo: 'head',         // <script> será injetado no <head>
+        attrs: {
+          defer: true             // adiciona o defer que o PageSpeed pede
+        }
+      },
       includeAssets: [
         'favicon.svg',
         'robots.txt',

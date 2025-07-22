@@ -21,10 +21,11 @@ export default function Hero() {
               </p>
             <div className={styles.container_buttons}>
               <a href="#projetos" className={styles.button}>Projetos</a> 
-              <Link to='/curriculo'
-                 className={styles.button} 
-                 rel="noopener noreferrer" 
-                 target='blank'>Currículo
+              <Link 
+                to='/curriculo'
+                rel="noopener noreferrer"
+                className={styles.button}>   
+                Currículo
               </Link>
             </div>
           </div>

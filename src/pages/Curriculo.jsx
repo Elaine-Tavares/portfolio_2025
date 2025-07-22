@@ -25,14 +25,14 @@ export default function Curriculo() {
   return (
     <section>
         <Helmet>
-            <title>Curriculo | ElaineTavaresDev</title>
+            <title>Curriculo | ElaineTavaresWeb</title>
             <meta
             name="description"
             content="Currículo de Elaine Tavares – Desenvolvedora Front-End em transição de carreira com foco em React, PHP, MySQL, SEO e boas práticas de performance web. Acesse para conhecer habilidades, formações e experiências."
             />
         </Helmet>
         <nav className={styles.nav} aria-label="Navegação principal">
-            <Link to='/' className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_ligth} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Dev</Link>
+            <Link to='/' className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_ligth} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Web</Link>
             <Link to='/' className={styles.home}>Home</Link>
         </nav>
         <main className={styles.curriculo}>
