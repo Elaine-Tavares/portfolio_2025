@@ -41,23 +41,32 @@
      <link rel="canonical" href="https://elainetavaresweb.com/" />
 
      <link rel="manifest" href="manifest.json">
+
+     <link rel="preload" href="/assets/index-Dohi8Ayh.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+     <noscript><link rel="stylesheet" href="/assets/index-Dohi8Ayh.css"></noscript>
+
+     <!-- Pré-conexão com o domínio do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte com display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+     <script>
+        // Aguarda o carregamento da página
+        window.addEventListener('load', () => {
+          const script = document.createElement('script');
+          script.src = '/registerSW.js';
+          script.defer = true;
+          document.body.appendChild(script);
+        });
+     </script>
   </body>
 </html>
 
-<script>
-    if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service Worker registrado com sucesso: ', registration);
-        })
-        .catch((error) => {
-          console.log('Falha ao registrar o Service Worker: ', error);
-        });
-    });
-  }
-</script>
+

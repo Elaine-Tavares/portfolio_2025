@@ -9,7 +9,7 @@ export default function Projetos() {
     const listaProjetos = [
     {
       imagem: `${elaines_charm}`,
-      titulo: 'Elaine’s Charm',
+      titulo: 'Elaine’s Charm (em desenvolvimento...)',
       descricao: 'E-commerce de cosméticos feito com React, PHP e MySQL, com autenticação e carrinho de compras.',
       tecnologias: ['React', 'PHP', 'MySQL', 'PHPMailer'],
       link: 'https://ecommerce-react-php-theta.vercel.app/',
