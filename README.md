@@ -1,6 +1,6 @@
 # Portfólio • Elaine Tavares 👩‍💻
 
-![Logo Capivara](/assets/logo_capivara_ligth_128x128.webp)
+![Logo Capivara](./assets/logo_capivara_ligth_128x128.webp)
 
 Este é o meu portfólio pessoal, desenvolvido com **React**. Aqui você encontrará uma seleção dos meus projetos mais recentes, além de informações sobre minhas habilidades técnicas, trajetória e formas de contato. 💼🚀
 
@@ -14,9 +14,12 @@ Este é o meu portfólio pessoal, desenvolvido com **React**. Aqui você encontr
 - Imagens otimizadas em WebP
 - HTML semântico e acessível
 
+
 📱 Responsivo
 
 O site é totalmente responsivo, adaptando-se a diversos tamanhos de tela (desktop, tablet e mobile). O uso do srcset e sizes nas imagens garante carregamento otimizado em diferentes resoluções.
+
+
 🧠 Funcionalidades
 
     Scroll animado com AOS
@@ -26,6 +29,7 @@ O site é totalmente responsivo, adaptando-se a diversos tamanhos de tela (deskt
     Código modular com componentes reutilizáveis
 
     Design limpo e focado na usabilidade
+
 
 🐹 Sobre a Logo
 
