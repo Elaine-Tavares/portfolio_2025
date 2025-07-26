@@ -12,7 +12,9 @@ export default function Projeto({imagem, titulo, descricao, link, tecnologias}) 
     <div className={styles.projeto} data-aos="fade-up">
       <img 
         className={styles.imagem} 
-        src={imagem} 
+        src={imagem.src} 
+        srcSet={imagem.srcset}
+        sizes="(max-width: 768px) 100vw, 640px"
         alt={`Imagem ilustrativa do projeto ${titulo}`} 
         loading="lazy" 
       /> 

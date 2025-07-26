@@ -6,7 +6,6 @@ import { FaArrowUp, FaCheckCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
-import logo_capivara_ligth from '../assets/logo_capivara_ligth.webp'
 import styles from './Performance.module.css';
 
 export default function Performance() {
@@ -34,7 +33,15 @@ export default function Performance() {
         />
       </Helmet>
       <nav className={styles.nav} aria-label="Navegação principal">
-        <Link to='/' className={styles.logo} style={{textDecoration: "none"}}><img src={logo_capivara_ligth} alt="Logo do site - Capivara na tela do notebook" />Elaine<span>Tavares</span>Web</Link>
+        <Link 
+          to='/' 
+          className={styles.logo} 
+          style={{textDecoration: "none"}}>
+          <img src="/assets/logo_capivara_ligth_96x96.webp" 
+          srcSet='/assets/logo_capivara_ligth_64x64.webp, /assets/logo_capivara_ligth_96x96.   webp, /assets/logo_capivara_ligth_128x128.webp'  
+          alt="Logo do site - Capivara na tela do notebook" />
+          Elaine<span>Tavares</span>Web
+        </Link>
         <Link to='/' className={styles.home}>Home</Link>
       </nav>
         <main className={styles.performance}>

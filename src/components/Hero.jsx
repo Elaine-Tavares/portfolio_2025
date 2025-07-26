@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import hero_foto5 from '../assets/hero_foto5.png'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -13,7 +12,10 @@ export default function Hero() {
         <p className={styles.hero_tecnologias}>HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub</p>
         <div className={styles.sobre_mim_container}>
           <div className={styles.sobre_mim_container_img}>
-            <img src={hero_foto5} alt="Foto de Elaine Tavares, desenvolvedora Front-End"/>
+            <img src="/assets/hero_foto_768x869.webp" 
+              alt="Foto de Elaine Tavares, desenvolvedora Front-End"
+              srcset="/assets/hero_foto_375x424.webp, /assets/hero_foto_768x869.webp, /assets/hero_foto_1440x1630.webp"
+           />
           </div>
           <div className={styles.sobre_mim_container_texto}>
               <h2 className='titulo'>Sobre Mim</h2>
