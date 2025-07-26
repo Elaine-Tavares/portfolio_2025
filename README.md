@@ -1,8 +1,6 @@
 # Portfólio • Elaine Tavares 👩‍💻
 
-<h1>
-  <img src="/public/assets/logo_capivara_ligth_128x128.webp" alt="Logo Capivara" width="128" style="border-radius: 50%;" />
-</h1>
+<img src="/public/assets/logo_capivara_ligth_128x128.webp" alt="Logo Capivara" width="128"/>
 
 Este é o meu portfólio pessoal, desenvolvido com **React**. Aqui você encontrará uma seleção dos meus projetos mais recentes, além de informações sobre minhas habilidades técnicas, trajetória e formas de contato. 💼🚀
 

@@ -4,7 +4,7 @@ import Skills from '../components/Skills'
 import Contato from '../components/Contato'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import whats from '/assets/whats.webp'
+import whats from '/assets/whats_40x40.webp'
 import Garanto from '../components/Garanto'
 import { Helmet } from 'react-helmet';
 import styles from './Home.module.css'

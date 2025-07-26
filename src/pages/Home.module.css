@@ -1,20 +1,22 @@
 .whats{
   position: fixed;
-  top: 100px;
+  top: 30px;
   left: 80px;
   z-index: 800;
   color: #0ff;
-  width: 70px;
+  width: 60px;
   transition: 0.3s ease;
   cursor: pointer;
+  border-radius: 40%;
+  transition: 0.5s ease;
 }
 .whats:hover{
-    width: 75px;
+    transform: scale(1.1);
 }
 
 @media (max-width: 868px){
   .whats{
-  top: 80px;
+  top:100px;
   left: 30px;
   width: 50px;
 }
@@ -24,8 +26,8 @@
 }
 
 @media (max-width: 480px){
-  .whats{
-  left: 10px;
+  .whats{ 
+  left: 30px;
   width: 40px;
 }
 .whats:hover{

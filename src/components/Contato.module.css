@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+
 @keyframes gradientAnimation {
   0% {
     /*background-position: determina a posição do fundo (gradiente) na horizontal x% e vertical y%.

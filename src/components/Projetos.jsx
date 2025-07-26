@@ -7,7 +7,7 @@ export default function Projetos() {
     {
       imagem: {
         src: '/assets/projetos_elaines_charm_640x301.webp',
-        srcset: '/assets/projetos_elaines_charm_320x150.webp 320w, /assets/projetos_elaines_charm_640x301.webp 640w, /assets/projetos_elaines_charm_1024x481.webp 1024w'
+        srcset: '/assets/projetos_elaines_charm_320x150.webp 320w, /assets/projetos_elaines_charm_640x301.webp 640w'
       } ,
       titulo: 'Elaine’s Charm (em desenvolvimento...)',
       descricao: 'E-commerce de cosméticos feito com React, PHP e MySQL, com autenticação e carrinho de compras.',
@@ -17,7 +17,7 @@ export default function Projetos() {
     {
        imagem: {
         src: '/assets/projetos_organo_pets_640x291.webp',
-        srcset: '/assets/projetos_organo_pets_320x145.webp 320w, /assets/projetos_organo_pets_640x291.webp 640w, /assets/projetos_organo_pets_1024x465.webp 1024w'
+        srcset: '/assets/projetos_organo_pets_320x145.webp 320w, /assets/projetos_organo_pets_640x291.webp 640w'
       } ,
       titulo: 'Organo Pets',
       descricao: 'Cria cards bonitinhos com as fotos dos seus pets, com localStorage tem a funcionalidade de excluir card e alterar a cor.',
@@ -27,7 +27,7 @@ export default function Projetos() {
     {
        imagem: {
         src: '/assets/projetos_hulu_640x324.webp',
-        srcset: '/assets/projetos_hulu_320x162.webp 320w, /assets/projetos_hulu_640x324.webp 640w, /assets/projetos_hulu_1024x518.webp 1024w'
+        srcset: '/assets/projetos_hulu_320x162.webp 320w, /assets/projetos_hulu_640x324.webp 640w'
       } ,
       titulo: 'Réplica Hulu',
       descricao: 'Repliquei o site hulu.com, com foco em reforçar conceitos de estruturação semântica, responsividade e boas práticas em HTML e CSS.',
