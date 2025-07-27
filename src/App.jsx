@@ -16,7 +16,7 @@ function App() {
        <Suspense 
         fallback={
           <div style={{padding: "2rem", textAlign: "center"}}>
-            <p>Carregando...</p>
+            <div class="spinner"></div>
           </div>}>
         <Routes>
           <Route path="/" element={<Home/>}/>

@@ -3,7 +3,7 @@
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   border: 1px solid #00f7ff40;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   margin: 2rem auto;
   max-width: 900px;
   box-shadow: 0 0 20px #00f7ff30;
@@ -24,8 +24,13 @@
   text-shadow: 0 0 5px #00f7ff50;
 }
 
-@media (max-width: 868px){
+@media (max-width: 805px){
  .garanto {
     width: 90%;
+    padding-bottom: 4rem;
+}
+
+.garanto h4 {
+  font-size: 1.1rem;
 }
 }

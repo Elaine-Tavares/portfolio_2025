@@ -25,13 +25,23 @@ export default function Hero() {
             </div>
           </div>
           <div className={styles.sobre_mim_container_texto}>
-         
-     
-        <h3 style={{color:"white"}}>Sites rápidos e que funcionam bem em qualquer dispositivo!</h3>
-        <p className={styles.hero_tecnologias}>HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub</p>
-              <h2 className={styles.titulo_sobre_mim}>Sobre Mim</h2>
-              <p className='texto'>Sou apaixonada por Desenvolvimento Web e atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL (até o momento!). Essas são as ferramentas que utilizo para criar soluções web funcionais e eficientes. Gosto de aprender coisas novas e estou em constante evolução. Pegar um projeto do zero, ver ele tomando forma e chegando ao ar é algo que realmente me motiva! Atualmente, curso Sistemas para Internet na graduação, o que tem ampliado meus conhecimentos e reforçado o meu compromisso em uma carreira sólida e de excelência na área do Desenvolvimento Web.
-              </p>
+            <h3>Sites rápidos e que funcionam bem em qualquer dispositivo</h3>
+            <p className={styles.hero_tecnologias}>
+              HTML | CSS | JavaScript | React | PHP | MySQL | SEO | GitHub
+            </p>
+            <p className={styles.texto}>
+              Estou em transição de carreira para a área de Desenvolvimento Web, com foco na criação de sites personalizados, modernos e responsivos. Busco sempre entregar soluções que funcionem bem, sejam fáceis de navegar e causem uma boa impressão.
+            </p>
+            <h4>O que procuro aplicar nos projetos:</h4>
+            <div className={styles.lista}>
+              ✅ Layout responsivo, que se adapta a diferentes tamanhos de tela <br />
+              ✅ Boas práticas de SEO, para ajudar seu site a ser encontrado no Google <br />
+              ✅ Avaliação de desempenho com PageSpeed Insights, para garantir carregamento mais rápido <br />
+              ✅ Design limpo e cuidado com os detalhes, pensando na experiência do visitante
+            </div>
+            <p className={styles.texto}>
+              Tenho aprendido muito e me dedicado com carinho ao Desenvolvimento Web, sempre buscando evoluir e entender melhor as necessidades de cada projeto. Se você está procurando alguém para criar um site com atenção e cuidado, fico feliz em conversar sobre sua ideia. O orçamento é sem compromisso! 🤑😊
+            </p>          
           </div>
         </div>  
       </section> 

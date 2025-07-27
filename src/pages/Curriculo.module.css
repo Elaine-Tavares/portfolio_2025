@@ -12,6 +12,17 @@
   width: 100%;
 }
 
+@keyframes fadeIn {
+  /*No início 0%: o elemento está totalmente transparente*/
+  0% {
+    opacity: 0;
+  }
+  /*No fim 100%: o elemento está totalmente visível*/
+  100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -27,8 +38,8 @@
 .logo img{
   width: 4rem;
   border-radius: 50%;
-   box-shadow: 0 0 20px #0ff;
-   margin-right: 10px;
+  box-shadow: 0 0 20px #0ff;
+  margin-right: 10px;
 }
 
 .home {
@@ -88,18 +99,18 @@
   background-color: #00b6cc;
 }
 
-@media (max-width: 868px){
+@media (max-width: 805px){
   .logo {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
-.logo span {
-  color: #f0f0f0;
-}
+  .logo span {
+    color: #f0f0f0;
+  }
 
-.logo img{
-  width: 3rem;
-}
+  .logo img{
+    width: 3rem;
+  }
 
 .curriculo {
   padding: 3rem 4rem;

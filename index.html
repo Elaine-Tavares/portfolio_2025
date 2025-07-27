@@ -32,30 +32,42 @@
       property="og:description"
       content="Sites rápidos e que funcionam bem em qualquer dispositivo. Atuo com tecnologias como GitHub, HTML, CSS, JavaScript, React, PHP e MySQL."
     />
-     <meta property="og:image" content="./src/assets/hero_foto5.png" />
+     <meta property="og:image" content="./assets/logo_capivara_ligth_96x96.webp" />
      <meta property="og:url" content="https://elainetavaresweb.com/" />
      <meta property="og:type" content="website" />
      <meta property="og:locale" content="pt_BR" />
 
      <!-- SEO técnico -->
+     <!--Serve para indicar ao Google e outros buscadores qual é a URL oficial (canônica) da página — ou seja, a versão principal que deve ser indexada.-->
      <link rel="canonical" href="https://elainetavaresweb.com/" />
-
+     <!--Associa o site a um Web App Manifest, que é um arquivo JSON com configurações que tornam o site uma Progressive Web App (PWA).-->
      <link rel="manifest" href="manifest.json">
 
-     <link rel="preload" href="/assets/index-Dohi8Ayh.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-     <noscript><link rel="stylesheet" href="/assets/index-Dohi8Ayh.css"></noscript>
+     <!--Evita que o carregamento do CSS bloqueie o carregamento e a renderização da página.-->
+     <link 
+     rel="preload" 
+     href="/assets/index-Dohi8Ayh.css" 
+     as="style" 
+     onload="this.onload=null;this.rel='stylesheet'"
+     >
+     <!--Alguns navegadores antigos não suportam rel="preload". Para garantir que o CSS seja aplicado nesses casos, você pode usar um pequeno fallback dentro de <noscript>, que serve para navegadores com JS desabilitado ou que não suportam preload:-->
+     <noscript>
+      <link rel="stylesheet" href="/assets/index-Dohi8Ayh.css">
+     </noscript>
 
      <!-- Pré-conexão com o domínio do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fonte com display swap -->
+    <!-- 2. Precarrega o CSS da fonte -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <!-- 3. Aplica de forma não bloqueante -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.media='all'">
+    <!-- 4. Fallback para JS desativado -->
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     </noscript>
-
   </head>
 
   <body>

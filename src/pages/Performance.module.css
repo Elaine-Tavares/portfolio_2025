@@ -38,8 +38,8 @@
 .logo img{
   width: 4rem;
   border-radius: 50%;
-   box-shadow: 0 0 20px #0ff;
-   margin-right: 10px;
+  box-shadow: 0 0 20px #0ff;
+  margin-right: 10px;
 }
 
 .home {
@@ -56,7 +56,7 @@
 
 
 .performance {
-  padding: 3rem 4rem;
+  padding: 50px 2rem 50px 2rem;
   width: 100%;
   margin: 0 auto;
   color: #e0e0e0;
@@ -136,9 +136,9 @@
 }
 
 
-@media (max-width: 868px){
+@media (max-width: 805px){
   .logo {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
   .logo span {
@@ -152,6 +152,14 @@
   .performance {
     padding: 3rem 4rem;
   }
+
+  .intro {
+  margin-top: 2rem;
+}
+
+.home {
+  font-size: 14px;
+}
 }
 
 @media(max-width: 480px){

@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   box-shadow: 5px 5px 20px #00e0ff;
-  padding: 1rem 4.5rem;
+  padding: 2rem 4.5rem 2rem 4.5rem;
 }
 
 .info {
@@ -79,7 +79,11 @@
  }
 
 /* Responsivo */
-@media (max-width: 868px) {
+@media (max-width: 805px) {
+  .footer{
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
   .info {
   justify-content: center;
 }

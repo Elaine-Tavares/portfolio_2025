@@ -93,7 +93,7 @@
 
 
 /* Responsivo */
-@media (max-width: 868px) {
+@media (max-width: 805px) {
   .projeto {
     flex-direction: column;
     align-items: flex-start;
@@ -101,6 +101,7 @@
 
   .imagem {
     width: 100%;
+     margin-bottom: 20px;
   }
 
   .info {

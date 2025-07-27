@@ -28,6 +28,22 @@ body{
   font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+.spinner {
+      width: 80px;
+      height: 80px;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top-color: #0ff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 20% auto;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
 h1, 
 .titulo {
   font-size: 2.5rem;
@@ -52,6 +68,7 @@ h1::after,
 
 .subtitulo{
   color: #fff;
+  text-shadow: 0px 0px 3px black;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
@@ -59,6 +76,7 @@ h1::after,
 
 .texto{
   color: rgba(190,189,190,255);
+  text-shadow: 0px 0px 3px black;
   font-size: 18px;
   text-align: justify;
   line-height: 25px;
@@ -93,23 +111,30 @@ h1::after,
 }
 
 
-@media (max-width:868px){
+@media (max-width:805px){
   h1,
   .titulo{
   font-size: 2rem;
   margin-bottom: 0rem !important;
+  text-shadow: 0px 0px 3px black;
 }
-  
-
 
 .subtitulo{
   font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+}
+
+@media (max-width:480px){
+  h1,
+  .titulo{
+  font-size: 1.8rem;
 }
 
 .subtitulo{
+  font-size: 1.5rem;
   margin-bottom: 0px;
 }
-
 }
 
 

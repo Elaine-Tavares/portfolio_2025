@@ -8,7 +8,7 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 0px 2rem 80px 2rem;
+  padding: 0px 2rem 50px 2rem;
   text-align: center; 
   display: flex;
   flex-flow: column;
@@ -41,67 +41,38 @@
   }
 }
 
-h1{
-  margin-bottom: 1.5rem;
-}
-
-h3, p{
-  text-align: center;
-}
-
-h3{
-  margin-bottom: 10px;
-}
-
-.titulo_sobre_mim{
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 15px 0px 30px 0px;
-  color: #0ff;
-  position: relative;
-}
-
-.titulo_sobre_mim::after {
-  content: '';
-  width: 60px;
-  height: 4px;
-  background-color: #0ff;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
-}
-
-.hero_tecnologias{
-   color: rgba(190,189,190,255);
-}
-
 .sobre_mim_container{
     width: 90%;
     display: flex;
-    flex-wrap: nowrap;
     align-items: start;
     justify-content: center;
-    margin-top: 50px;
-    gap: 150px;
 }
 
 .sobre_mim_container_img,
 .sobre_mim_container_texto{
-    width: 500px;
+    width: 680px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 0px;
 }
 
 .sobre_mim_container_img img{
   width: 40%;
   box-shadow: 0 0 20px #0ff;
   border-radius: 18px;
+}
+
+h1{
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 0px 3px black;
+}
+
+.container_buttons{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .button {
@@ -124,22 +95,50 @@ h3{
   background-color: #00baba;
 }
 
-.container_buttons{
-  display: flex;
-  gap: 30px;
-  margin-top: 30px;
+h3{
+  color: #0ff;
+  text-shadow: 0px 0px 3px black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero_tecnologias{
+   color: rgba(190,189,190,255);
+   text-shadow: 0px 0px 3px black;
+   text-align: center;
+}
+
+.texto{
+    color: #fff;
+    text-shadow: 0px 0px 3px black;
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+h4{
+   color: #0ff;
+   text-shadow: 0px 0px 3px black;
+   margin-top: 18px;
+   margin-bottom: -10px;
+   align-self: self-start;
+   font-size: 1.1rem;
+}
+
+.lista{
+  color: #fff;
+  margin-top: 15px;
+  text-align: justify;
+  line-height: 25px;
+  text-shadow: 0px 0px 3px black;
 }
 
 
-@media (max-width:868px){
-  .sobre_mim_container{
-    width: 90%;
-    display: flex;
- 
-    border: 5px solid red;
-}
+/*Responsividade*/
+@media (max-width:805px){
   .hero{
-    padding: 50px 2rem 0px 2rem;
+    padding: 50px 2rem 50px 2rem;
   }
 
   .sobre_mim_container{
@@ -155,13 +154,27 @@ h3{
       gap: 30px;
   }
 
-  .sobre_mim_container_texto h2{
-      margin-bottom: 0px;
-  }
+.texto{
+    color: #fff;
+    margin-top: 0px;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 20px;
+}
 
   .container_buttons{
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+h4{
+   margin-top: 0px;  
+   margin-bottom: -30px;
+}
+
+.lista{
+  text-align: start;
+  margin-left: -50px;
 }
  
 }
@@ -170,4 +183,8 @@ h3{
   .sobre_mim_container {
     gap: 15px;
   } 
+
+  .lista{
+  margin-left: 0px;
+}
 }

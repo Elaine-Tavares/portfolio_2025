@@ -1,6 +1,6 @@
 .whats{
   position: fixed;
-  top: 30px;
+  top: 300px;
   left: 80px;
   z-index: 800;
   color: #0ff;
@@ -14,9 +14,9 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 868px){
+@media (max-width: 805px){
   .whats{
-  top:100px;
+  top: 300px;
   left: 30px;
   width: 50px;
 }
@@ -27,6 +27,7 @@
 
 @media (max-width: 480px){
   .whats{ 
+   top:280px; 
   left: 30px;
   width: 40px;
 }

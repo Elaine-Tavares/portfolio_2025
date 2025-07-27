@@ -35,4 +35,16 @@ O site é totalmente responsivo, adaptando-se a diversos tamanhos de tela (deskt
 
 A capivara programadora representa meu estilo calmo, focado e curioso. Ela também mostra que a tecnologia pode ser acessível e amigável para todos! 😄
 
+Pontos considerados no desenvolvimento::
+
+  - Layout e responsividade
+
+  - Clareza das informações
+
+  - Performance e tempo de carregamento
+
+  - Experiência do usuário (UX)
+
+  - Código e boas práticas (se estiver acessível)
+
 Desenvolvido com 💚 por Elaine Tavares
